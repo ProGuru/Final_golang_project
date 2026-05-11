@@ -1,0 +1,8 @@
+2026/05/03 18:44:03 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:44:15 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:44:22 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:44:34 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:44:46 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:46:01 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 20:40:39 main.go:47: Сервер запускается на порту :7540
+2026/05/03 23:25:21 main.go:47: Сервер запускается на порту :7540
