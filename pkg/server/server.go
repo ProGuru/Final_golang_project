@@ -1,15 +1,30 @@
 package server
 
 import (
+	"log"
 	"net/http"
+	"path/filepath"
+	"time"
 )
 
-const webDir = "./web"
+type Server struct {
+	Logger *log.Logger
+	Server *http.Server
+}
 
-func StartServer() error {
-	fs := http.FileServer(http.Dir(webDir))
+func NewServer(logFile *log.Logger, webDir string) *Server {
+	mux := http.NewServeMux()
+	mux.Handle("/", http.FileServer(http.Dir(filepath.Clean(webDir))))
 
-	http.Handle("/", fs)
-
-	return http.ListenAndServe(":7540", nil)
+	return &Server{
+		Logger: logFile,
+		Server: &http.Server{
+			Addr:         ":7540",
+			Handler:      mux,
+			ErrorLog:     logFile,
+			ReadTimeout:  5 * time.Second,
+			WriteTimeout: 10 * time.Second,
+			IdleTimeout:  15 * time.Second,
+		},
+	}
 }
