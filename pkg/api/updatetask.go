@@ -45,5 +45,5 @@ func updateTaskHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// В случае успешного изменения должен возвращаться пустой JSON {}
-	writeJson(w, json.NewEncoder(w).Encode(nil))
+	writeJson(w, map[string]any{})
 }

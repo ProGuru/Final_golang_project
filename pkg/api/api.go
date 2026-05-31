@@ -11,6 +11,7 @@ func Init(webDir string) {
 	http.HandleFunc("/api/nextdate", nextDayHandler)                    // Регистрируем обработчик для пути /api/nextdate, который будет обрабатывать запросы на получение следующей даты задачи
 	http.HandleFunc("/api/task", taskHandler)                           // Добавляем задачу
 	http.HandleFunc("/api/tasks", tasksHandler)                         // Получаем список ближайших задач
+	http.HandleFunc("/api/task/done", markDoneTaskHandler)              // Пометка задачи выполненной
 }
 
 func taskHandler(w http.ResponseWriter, r *http.Request) {
@@ -22,5 +23,7 @@ func taskHandler(w http.ResponseWriter, r *http.Request) {
 		getTaskHandler(w, r)
 	case http.MethodPut:
 		updateTaskHandler(w, r)
+	case http.MethodDelete:
+		deleteTask(w, r)
 	}
 }

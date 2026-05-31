@@ -97,3 +97,34 @@ func UpdateTask(task *Task) error {
 	}
 	return nil
 }
+
+func UpdateDate(next string, id string) error {
+	// по сути, отличается от db.UpdateTask() только запросом, так как нужно изменить только колонку date, а не все поля
+	query := `UPDATE scheduler SET date = :date WHERE id = :id`
+	res, err := db.Exec(query, sql.Named("date", next), sql.Named("id", id))
+
+	if err != nil {
+		return fmt.Errorf("ошибка при выполнении запроса к БД: %w", err)
+	}
+	// метод RowsAffected() возвращает количество записей к которым
+	// была применена SQL команда
+	count, err := res.RowsAffected()
+	if err != nil {
+		return fmt.Errorf("ошибка при выполнении запроса к БД: %w", err)
+	}
+
+	if count == 0 {
+		return fmt.Errorf(`incorrect id for updating task`)
+	}
+	return nil
+}
+
+func DeleteTask(id string) error {
+	// нужно удалить из таблицы scheduler задачу с указанным идентификатором
+	query := `DELETE FROM scheduler WHERE id = ?`
+	_, err := db.Exec(query, id)
+	if err != nil {
+		return fmt.Errorf("ошибка при выполнении запроса к БД: %w", err)
+	}
+	return nil
+}
