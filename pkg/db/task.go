@@ -1,6 +1,9 @@
 package db
 
-import "database/sql"
+import (
+	"database/sql"
+	"fmt"
+)
 
 // параметры задачи
 type Task struct {
@@ -24,6 +27,40 @@ func AddTask(task *Task) (int64, error) {
 }
 
 /* Вам нужно вспомнить, как отправляются запросы SELECT и как потом происходит сканирование результата с помощью методов Next() и Scan(). */
-/* func Tasks(limit int) ([]*Task, error) {
-	return
-} */
+func Tasks(limit int) ([]*Task, error) {
+	// выбираем все поля в порядке увеличения по дате
+	query := `SELECT id, date, title, comment, repeat FROM scheduler ORDER BY date ASC`
+	rows, err := DB.Query(query)
+
+	if err != nil {
+		return nil, fmt.Errorf("ошибка при выполнении запроса к БД: %w", err)
+	}
+	defer rows.Close()
+
+	var res []*Task
+	var count int
+	for rows.Next() {
+		p := Task{}
+
+		err := rows.Scan(&p.ID, &p.Date, &p.Title, &p.Comment, &p.Repeat)
+		if err != nil {
+			return nil, fmt.Errorf("ошибка при сканировании результата запроса: %w", err)
+		}
+
+		res = append(res, &p)
+
+		count++
+		if count > limit {
+			break
+		}
+	}
+
+	if err = rows.Err(); err != nil {
+		return nil, fmt.Errorf("ошибка при сканировании результата запроса: %w", err)
+	}
+	if res == nil {
+		res = make([]*Task, 0) // возвращаем пустой слайс, если в БД нет задач
+	}
+
+	return res, nil
+}
