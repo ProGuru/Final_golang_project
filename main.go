@@ -22,8 +22,8 @@ const DB_FILE string = "scheduler.db" // название БД
 
 func main() {
 	// настройка подключения к БД
-	var DBScheduler db.SchedulerStore
-	err := DBScheduler.Init(DB_FILE)
+	//var DBScheduler db.SchedulerStore
+	err := db.Init(DB_FILE)
 	if err != nil {
 		log.Fatal(err)
 		return

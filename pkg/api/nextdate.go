@@ -10,8 +10,15 @@ import (
 
 const YYYYMMDD string = "20060102"
 
+// Чтобы не принимать во внимание время, лучше написать специальную функцию afterNow(date, now time.Time) bool , которая будет возвращать true, если первая дата больше второй
 func afterNow(date, now time.Time) bool {
-	return date.After(now)
+	if date.Year() != now.Year() {
+		return date.Year() > now.Year()
+	}
+	if date.Month() != now.Month() {
+		return date.Month() > now.Month()
+	}
+	return date.Day() > now.Day()
 }
 
 // now — время, от которого ищется ближайшая дата
@@ -58,7 +65,7 @@ func NextDate(now time.Time, dstart string, repeat string) (string, error) {
 				break
 			}
 		}
-	} else {
+	} else if repeatParts[0] == "y" {
 		for {
 			expirationTime = expirationTime.AddDate(1, 0, 0)
 			if afterNow(expirationTime, now) {

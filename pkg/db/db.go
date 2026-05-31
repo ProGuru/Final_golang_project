@@ -14,11 +14,9 @@ const schema = `CREATE TABLE scheduler (
 	comment TEXT NOT NULL DEFAULT "",
 	repeat VARCHAR(128) NOT NULL DEFAULT "")`
 
-type SchedulerStore struct {
-	db *sql.DB
-}
+var DB *sql.DB
 
-func (s *SchedulerStore) Init(dbFileName string) error {
+func Init(dbFileName string) error {
 	// проверяем, существует ли файл БД. Если нет - то создаём
 	_, err := os.Stat(dbFileName)
 
@@ -31,12 +29,12 @@ func (s *SchedulerStore) Init(dbFileName string) error {
 	if err != nil {
 		return err
 	}
-	s.db = db
+	DB = db
 
 	// если install равен true, после открытия БД требуется выполнить
 	// sql-запрос с CREATE TABLE и CREATE INDEX
 	if install {
-		_, err := s.db.Exec(schema)
+		_, err := DB.Exec(schema)
 		if err != nil {
 			return err
 		}
