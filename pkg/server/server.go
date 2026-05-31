@@ -3,8 +3,9 @@ package server
 import (
 	"log"
 	"net/http"
-	"path/filepath"
 	"time"
+
+	"github.com/ProGuru/Final_golang_project/pkg/api"
 )
 
 type Server struct {
@@ -12,15 +13,13 @@ type Server struct {
 	Server *http.Server
 }
 
-func NewServer(logFile *log.Logger, webDir string) *Server {
-	mux := http.NewServeMux()
-	mux.Handle("/", http.FileServer(http.Dir(filepath.Clean(webDir))))
+func Run(logFile *log.Logger, webDir string) *Server {
+	api.Init(webDir)
 
 	return &Server{
 		Logger: logFile,
 		Server: &http.Server{
 			Addr:         ":7540",
-			Handler:      mux,
 			ErrorLog:     logFile,
 			ReadTimeout:  5 * time.Second,
 			WriteTimeout: 10 * time.Second,

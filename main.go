@@ -18,12 +18,12 @@ type Scheduler struct {
 	repeat  string    // строковое поле не более 128 символов, которое будет содержать правила повторений для задачи
 }
 
-const dbFile = "scheduler.db" // название БД
+const DB_FILE string = "scheduler.db" // название БД
 
 func main() {
 	// настройка подключения к БД
 	var DBScheduler db.SchedulerStore
-	err := DBScheduler.Init(dbFile)
+	err := DBScheduler.Init(DB_FILE)
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -47,7 +47,7 @@ func main() {
 	}
 
 	// настройка и запуск сервера
-	myServer := server.NewServer(mylog, filepath.Join(baseDir, "web"))
+	myServer := server.Run(mylog, filepath.Join(baseDir, "web"))
 	log.Println("Сервер запускается на порту :7540")
 	if err = myServer.Server.ListenAndServe(); err != nil {
 		log.Fatal(err)
