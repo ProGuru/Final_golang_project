@@ -4,19 +4,10 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"time"
 
 	"github.com/ProGuru/Final_golang_project/pkg/db"
 	"github.com/ProGuru/Final_golang_project/pkg/server"
 )
-
-type Scheduler struct {
-	id      int       // автоинкрементный идентификатор
-	date    time.Time // дата задачи, которая будет храниться в формате YYYYMMDD или в Go-представлении 20060102
-	title   string    // заголовок задачи
-	comment string    // комментарий к задаче
-	repeat  string    // строковое поле не более 128 символов, которое будет содержать правила повторений для задачи
-}
 
 const DB_FILE string = "scheduler.db" // название БД
 

@@ -14,12 +14,13 @@ func addTaskHandler(w http.ResponseWriter, r *http.Request) {
 	// Нужно десериализовать полученный в запросе JSON в переменную var task db.Task.
 	var task db.Task
 	body, err := io.ReadAll(r.Body)
+	defer r.Body.Close()
 	if err != nil {
 		writeErrorJson(w, map[string]any{"error": "невозможно прочитать тело запроса"})
 		return
 	}
-	defer r.Body.Close()
 
+	// Дессериализуем полученный в запросе JSON в переменную var task db.Task.
 	err = json.Unmarshal(body, &task)
 	if err != nil {
 		writeErrorJson(w, map[string]any{"error": "ошибка десериализации JSON"})

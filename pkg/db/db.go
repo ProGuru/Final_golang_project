@@ -14,7 +14,7 @@ const schema = `CREATE TABLE scheduler (
 	comment TEXT NOT NULL DEFAULT "",
 	repeat VARCHAR(128) NOT NULL DEFAULT "")`
 
-var DB *sql.DB
+var db *sql.DB
 
 func Init(dbFileName string) error {
 	// проверяем, существует ли файл БД. Если нет - то создаём
@@ -25,16 +25,16 @@ func Init(dbFileName string) error {
 		install = true
 	}
 
-	db, err := sql.Open("sqlite", dbFileName)
+	newDB, err := sql.Open("sqlite", dbFileName)
 	if err != nil {
 		return err
 	}
-	DB = db
+	db = newDB
 
 	// если install равен true, после открытия БД требуется выполнить
 	// sql-запрос с CREATE TABLE и CREATE INDEX
 	if install {
-		_, err := DB.Exec(schema)
+		_, err := db.Exec(schema)
 		if err != nil {
 			return err
 		}
