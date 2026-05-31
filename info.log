@@ -1,0 +1,130 @@
+2026/05/03 18:44:03 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:44:15 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:44:22 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:44:34 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:44:46 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 18:46:01 main.go:27: listen tcp :7540: bind: address already in use
+2026/05/03 20:40:39 main.go:47: Сервер запускается на порту :7540
+2026/05/03 23:25:21 main.go:47: Сервер запускается на порту :7540
+2026/05/11 11:12:21 main.go:47: Сервер запускается на порту :7540
+2026/05/11 11:45:25 main.go:48: Сервер запускается на порту :7540
+2026/05/11 11:50:26 main.go:47: Сервер запускается на порту :7540
+2026/05/11 11:53:21 main.go:47: Сервер запускается на порту :7540
+2026/05/11 11:53:21 main.go:50: listen tcp :7540: bind: address already in use
+2026/05/11 11:55:31 main.go:30: Сервер запускается на порту :7540
+2026/05/11 16:27:38 main.go:30: Сервер запускается на порту :7540
+2026/05/20 23:47:09 main.go:42: Сервер запускается на порту :7540
+2026/05/22 01:20:49 main.go:42: Сервер запускается на порту :7540
+2026/05/26 22:51:03 main.go:42: Сервер запускается на порту :7540
+2026/05/26 23:44:41 main.go:51: Сервер запускается на порту :7540
+2026/05/27 21:28:14 main.go:51: Сервер запускается на порту :7540
+2026/05/31 10:49:43 main.go:51: Сервер запускается на порту :7540
+2026/05/31 10:53:32 main.go:51: Сервер запускается на порту :7540
+2026/05/31 11:37:14 main.go:51: Сервер запускается на порту :7540
+2026/05/31 12:44:52 main.go:51: Сервер запускается на порту :7540
+2026/05/31 12:53:37 main.go:51: Сервер запускается на порту :7540
+2026/05/31 13:14:54 main.go:51: Сервер запускается на порту :7540
+2026/05/31 13:16:01 main.go:51: Сервер запускается на порту :7540
+2026/05/31 13:17:32 main.go:51: Сервер запускается на порту :7540
+2026/05/31 13:18:36 main.go:51: Сервер запускается на порту :7540
+2026/05/31 13:36:34 main.go:51: Сервер запускается на порту :7540
+2026/05/31 16:59:36 main.go:51: Сервер запускается на порту :7540
+2026/05/31 18:50:11 main.go:51: Сервер запускается на порту :7540
+serv 2026/05/31 18:50:15 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:36)
+serv 2026/05/31 18:50:15 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:50:15 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:50:15 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:50:15 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:50:15 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:50:15 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:50:15 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:50:15 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:53:52 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:36)
+serv 2026/05/31 18:53:52 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:53:52 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:53:52 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:53:52 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:53:52 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:53:52 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:53:52 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:53:52 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:54:37 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:36)
+serv 2026/05/31 18:54:37 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:54:37 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:54:37 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:54:37 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:54:37 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:54:37 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:54:37 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:54:37 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+2026/05/31 18:55:02 main.go:51: Сервер запускается на порту :7540
+2026/05/31 18:55:02 main.go:53: listen tcp :7540: bind: address already in use
+serv 2026/05/31 18:55:13 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:36)
+serv 2026/05/31 18:55:13 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:55:13 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:55:13 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:55:13 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:55:13 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:55:13 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:55:13 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:55:13 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:57:51 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:36)
+serv 2026/05/31 18:57:51 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:57:51 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:57:51 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:57:51 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:57:51 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:57:51 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:57:51 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 18:57:51 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:14 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:36)
+serv 2026/05/31 19:00:14 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:14 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:14 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:14 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:14 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:14 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:14 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:14 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:59 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:36)
+serv 2026/05/31 19:00:59 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:59 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:59 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:59 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:59 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:59 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:59 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:00:59 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:06:00 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:36)
+serv 2026/05/31 19:06:00 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:06:00 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:06:00 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:06:00 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:06:00 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:06:00 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:06:00 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+serv 2026/05/31 19:06:00 server.go:3648: http: superfluous response.WriteHeader call from github.com/ProGuru/Final_golang_project/pkg/api.addTaskHandler (addtask.go:42)
+2026/05/31 19:06:11 main.go:51: Сервер запускается на порту :7540
+2026/05/31 19:15:22 main.go:51: Сервер запускается на порту :7540
+2026/05/31 19:24:42 main.go:51: Сервер запускается на порту :7540
+2026/05/31 19:26:00 main.go:51: Сервер запускается на порту :7540
+2026/05/31 19:27:36 main.go:51: Сервер запускается на порту :7540
+2026/05/31 19:27:55 main.go:51: Сервер запускается на порту :7540
+2026/05/31 19:39:56 main.go:51: Сервер запускается на порту :7540
+2026/05/31 19:41:11 main.go:51: Сервер запускается на порту :7540
+2026/05/31 19:45:44 main.go:51: Сервер запускается на порту :7540
+2026/05/31 19:50:00 main.go:51: Сервер запускается на порту :7540
+2026/05/31 20:03:14 main.go:51: Сервер запускается на порту :7540
+2026/05/31 20:06:44 main.go:51: Сервер запускается на порту :7540
+2026/05/31 20:13:13 main.go:51: Сервер запускается на порту :7540
+2026/05/31 20:16:24 main.go:51: Сервер запускается на порту :7540
+2026/05/31 20:19:42 main.go:51: Сервер запускается на порту :7540
+2026/05/31 20:58:41 main.go:51: Сервер запускается на порту :7540
+2026/05/31 21:58:41 main.go:51: Сервер запускается на порту :7540
+2026/06/01 00:04:01 main.go:42: Сервер запускается на порту :7540
+2026/06/01 00:07:38 main.go:42: Сервер запускается на порту :7540
+2026/06/01 00:18:03 main.go:42: Сервер запускается на порту :7540
+2026/06/01 00:45:55 main.go:42: Сервер запускается на порту :7540
+2026/06/01 00:49:16 main.go:42: Сервер запускается на порту :7540
+2026/06/01 01:22:39 main.go:42: Сервер запускается на порту :7540
+2026/06/01 01:39:07 main.go:42: Сервер запускается на порту :7540
