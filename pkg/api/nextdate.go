@@ -115,5 +115,4 @@ func nextDayHandler(w http.ResponseWriter, r *http.Request) {
 
 	// временная заглушка к коду
 	fmt.Fprintln(w, nextDate)
-	fmt.Print(nextDate)
 }
